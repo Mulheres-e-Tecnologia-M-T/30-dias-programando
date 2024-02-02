@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto', sem serifa;
+    font-size: 15px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.navegacao{
+margin-top: 0;
+list-style: none;
+display: flex;
+background: #E2E8F0;
+height:50px;
+border-top: 30px solid #E2E8F0 ;
+
+}
+li.marca{
+  font-weight: 900;
+  font-size: 20px;
+}
+.navegacao li a{
+  text-decoration: none;
+  color: black;
+  justify-content: space-between;
+  padding: 15px;
+  font-size:16px;
+  font-weight: 600;
+}
+.navegacao li a:hover{
+  color: rgb(255, 255, 255);
+  background: black;
+  transition: 1.5s;
+}
+.help{
+  display: flex;
+  padding-left:400px;
+}
+.itens{
+  display: flex;
+  list-style: none; 
+}
+.itens li{
+ margin: 30px;
+ font-weight: 600;
+}
+.itens li.um{
+  color: #2FBD6A;
+}
+.itens span#um{  
+ color: #2FBD6A;
+}
+main{
+  display: flex;
+}
+div.produto{  
+  display: block;
+}
+
+div .produto-desc , span,
+.cupom, .frete, .envio,.total{
+  margin-bottom: 20px;
+}
+ 
+.produto span{
+  font-size: 20px;
+  font-weight: 900;
+}
+.contas, .produto{
+  
+  flex: 1;
+  margin-right: 10px;
+}
+img{
+  width: 500px;
+  height: 300px;
+  border-radius: 12px;
+}
+div.valor{
+  display:flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 600;
+}
+div.btn-remov{
+  color: black;
+}
+span.ar{
+  height: 50px;
+  width: auto;
+  border-top: 50px;
+  border: 5px solid #F3EFEF;
+  background-color:#F3EFEF; 
+}
+span.material-symbols-outlined{
+  font-size: 15px;
+}
+div.frete {
+  display:flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+div.envio{
+  display:flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.envio-frete{
+  color: #2FBD6A;
+}
+.cupom input{
+  width:350px;
+  height: 59px;
+  background: #E2E8F0;
+}
+.cupom button{
+  width: 102px;
+  height: 59px;
+  border-radius: 4px;
+  padding:20px, 24px, 20px, 24px;
+}
+div.total{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 20px;
+}
+.total span{
+  font-size: 15px;
+}
