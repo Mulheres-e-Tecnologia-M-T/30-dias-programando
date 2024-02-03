@@ -38,7 +38,7 @@ password.addEventListener('keyup', () => {
     } else {
         labelPassword.setAttribute("style", "color:blue");
         labelPassword.innerHTML = "email";
-        password.setAttribute("style", "background:pink");
+        password.setAttribute("style", "background:#F3EFEF");
         validSenha = true;
     }
 
