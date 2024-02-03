@@ -54,16 +54,21 @@ li.marca {
   display: flex;
   list-style: none;
 }
-
+.itens a{
+  text-decoration: none;
+  color: black;
+}
 .itens li {
   margin: 30px;
   font-weight: 600;
 }
 
-.itens li.um {
+.itens li .um{
   color: #2FBD6A;
 }
-
+li .um-a{
+  color: #2FBD6A;
+}
 .itens span#um {
   color: #2FBD6A;
 }
