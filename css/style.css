@@ -1,10 +1,10 @@
 *{
     margin: 0;
     border: 0;
-    font-family: 'Roboto', sem serifa;
+    font-family: 'Inter', sem serifa;
     font-size: 15px;
 }
-
+/*menu*/
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -57,30 +57,88 @@ li.marca{
 .itens span#um{  
  color: #2FBD6A;
 }
+
+
+/*cadastro*/
 main{
   display: flex;
+  margin: 10px;
 }
+div{
+  display: flex;
+  width: 100%;
+  margin: 3px;
+}
+div.contas{
+  display: block;
+}
+form{
+  display:grid;
+}
+form input{
+  height: 57px;
+  width: 100%;
+  background: #E2E8F0;
+  
+}
+form label{
+  padding-top: 50px;
+}
+div.registro{
+  border-bottom: 2px solid #E2E8F0;
+  padding-bottom: 20px;
+}
+div.registro, .cancela{
+  justify-content: end;
+  margin-top: 50px;
+ 
+}
+div.registro button{
+  background: #2FBD6A;
+  color: white;
+  width: 95px;
+  height: 51px;
+  border-radius: 4px;
+}
+div.cancela button{
+  background: #2FBD6A;
+  color: white;
+  width: 200px;
+  height: 51px;
+  border-radius: 4px;
+}
+.registro span{
+  padding-top:15px;
+  font-weight: 600;
+}
+.cancela span{
+  padding-top: 15px;
+  color: #D1402C;
+  font-weight: 600;
+}
+/*produto*/ 
+
 div.produto{  
   display: block;
 }
-
-div .produto-desc , span,
-.cupom, .frete, .envio,.total{
-  margin-bottom: 20px;
+.produto-desc{
+  display: block;
 }
- 
+div.valor-frete, .envio-frete,.total-valor{
+display: block;
+}
 .produto span{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 900;
+  justify-content: end;
 }
-.contas, .produto{
-  
-  flex: 1;
+.contas, .produto{  
+
   margin-right: 10px;
 }
 img{
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  height:250px;
   border-radius: 12px;
 }
 div.valor{
@@ -90,10 +148,11 @@ div.valor{
   font-weight: 600;
 }
 div.btn-remov{
+  justify-content: end;
   color: black;
 }
 span.ar{
-  height: 50px;
+  height: 20px;
   width: auto;
   border-top: 50px;
   border: 5px solid #F3EFEF;
@@ -115,23 +174,34 @@ div.envio{
 .envio-frete{
   color: #2FBD6A;
 }
+div.cupom{
+  margin: 0;
+}
 .cupom input{
   width:350px;
   height: 59px;
+  font-weight: 600;
+  color: black;
   background: #E2E8F0;
 }
 .cupom button{
   width: 102px;
   height: 59px;
-  border-radius: 4px;
-  padding:20px, 24px, 20px, 24px;
+  border-radius: 4px;  
+  margin-left: 100px;
+  font-weight: 700;
+  border: 2px solid #2FBD6A;
 }
 div.total{
   display: flex;
   justify-content: space-between;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
 }
 .total span{
   font-size: 15px;
+}
+div.valor-frete,.envio-frete, .valor-total span{
+  padding-left: 50%;
+  
 }
