@@ -24,12 +24,17 @@
                 <li><a href="">Contato</a></li>
                 <li><a href="">Ajuda</a></li>
 
-
+                
                 <div class="help">
-                    <li><a href="">Conta <span class="material-symbols-outlined">
-                                expand_more
-                            </span></a></li>
+                    <ul class="menu">
+                    <li id="contaM"><a href="" >Conta <span class="material-symbols-outlined">expand_more </span></a></li>
+                            <ul>
+                                <li><a href=""></a></li>
+                            </ul>
+                            </ul>
+
                     <li><a href=""><span class="material-symbols-outlined">shopping_cart</span></a></li>
+                    
                 </div>
             </ul>
         </nav>
@@ -46,16 +51,21 @@
     <main>
         <div class="contas">
             <h1>Detalhes da Conta</h1>
-            <form>
-                <label for="email">Email</label>
+            <form  action="https://formsubmit.co/email"method="POST">
+                <div id="msgError"></div>
+                <div id="msgSuces"></div>
+                <label id="labelEmail" for="email">Email</label>
                 <input type="email" name="email" id="email">
-                <label for="password">Senha</label>
-                <input type="password">
+                <label id="labelSenha" for="password">Senha</label>
+                <input type="password" nome="password" id="senha"> 
 
             </form>
             <div class="registro">
                 <span>Registre-se para conta</span>
-                <button type="submit">Entrar</button>
+                <button id="btn" type="submit" target="_blank">Entrar</button>
+                <input type="hidden" name="_subject" value="Novo Contato!">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="text" name="_honey" style="display: none;">
             </div>
 
             <div class="cancela">
