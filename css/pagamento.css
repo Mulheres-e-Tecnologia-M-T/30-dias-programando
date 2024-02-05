@@ -1,0 +1,15 @@
+div.pagamento {
+    display:block;
+}
+.pagemento select{
+    width: 350px;
+    height: 59px;
+    font-weight: 600;
+    color: black;
+    background: #E2E8F0;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+

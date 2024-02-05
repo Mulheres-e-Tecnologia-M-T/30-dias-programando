@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pagamento.css">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>login</title>
+    <title>Pagamento</title>
 </head>
 
 <body>
@@ -24,24 +25,26 @@
                 <li><a href="">Contato</a></li>
                 <li><a href="">Ajuda</a></li>
 
-                
+
                 <div class="help">
                     <ul class="menu">
-                    <li id="contaM"><a href="" >Conta <span class="material-symbols-outlined">expand_more </span></a></li>
-                            <ul>
-                                <li><a href=""></a></li>
-                            </ul>
-                            </ul>
+                        <li id="contaM"><a href="">Conta <span class="material-symbols-outlined">expand_more </span></a>
+                        </li>
+                        <ul>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </ul>
 
                     <li><a href=""><span class="material-symbols-outlined">shopping_cart</span></a></li>
-                    
+
                 </div>
             </ul>
         </nav>
     </header>.
 
     <div class="itens">
-        <li class="um"><span id="um" class="material-symbols-outlined">person</span><a class="um-a" href="formulario.html">Conta</a></li>
+        <li class="um"><span id="um" class="material-symbols-outlined">person</span><a class="um-a"
+                href="formulario.html">Conta</a></li>
         <li><span class="material-symbols-outlined">remove</span></li>
         <li><span class="material-symbols-outlined"> package_2</span><a href="">Envio</a></li>
         <li><span class="material-symbols-outlined">remove</span></li>
@@ -49,23 +52,43 @@
         </a>
     </div>
     <main>
-        <div class="contas">
-            <h1>Detalhes da Conta</h1>
-            <form  action="https://formsubmit.co/email"method="POST">
-                <div id="msgError"></div>
-                <div id="msgSuces"></div>
-                <label id="labelEmail" for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label id="labelSenha" for="password">Senha</label>
-                <input type="password" nome="password" id="senha"> 
+        <div class="pagamento">
+            <h1>Detalhes do Envio</h1>
+            <form action="https://formsubmit.co/email" method="POST">
+                <select name="" id="">
+                    <label for="">Usar o cartão salvo</label>
+                    <option value=""></option>
+                </select>
+                <label for="">Nome no cartão</label>
+                <input type="text">
+                <label for="">Numero do cartão</label>
+                <input type="text">     
+              
+                <div class="detail"> 
+                   
+                    <label  for="number">Expiração
+                        <input type="number" name="number"> 
+                        <span>/</span>                       
+                        <input type="number" name="number">
+                    </label>
+                
+                    <label for="text">CVC <input type="number" name="number"></label>
+    
+             
+               
+                
+                 
+                </div>     
+
+
 
             </form>
             <div class="registro">
                 <span>Registre-se para conta</span>
                 <button id="btn" type="submit" target="_blank">Entrar</button>
                 <input type="hidden" name="_subject" value="Novo Contato!">
-                                <input type="hidden" name="_captcha" value="false">
-                                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display: none;">
             </div>
 
             <div class="cancela">
@@ -76,46 +99,46 @@
 
         </div>
 
-<!--produtos-->
+        <!--produtos-->
 
-  
+
         <div class="produto">
             <div class="produto-desc">
                 <h1>RESUMO DO PEDIDO</h1>
                 <img src="img/mouse.jpeg" alt="">
-                
+
             </div>
             <div><span>Mouse Gamer Redragon</span></div>
             <div class="valor">
-           
+
                 <div class="preco">15,22</div>
                 <div class="btn-remov">
                     <span class="ar"><span class="material-symbols-outlined">add</span></span>
                     <span class="valor">2</span>
                     <span class="ar"><span class="material-symbols-outlined">remove</span></span>
                 </div>
-                </div>
-
-                <div class="cupom">
-                    <input type="text" name="cupomD" placeholder="Cupom de DESCONTO">
-                    <button type="submit">Aplicar</button>
-                </div>
-                
-                <div class="frete">
-                    <P>Taxa</P>
-                    <span class="valor-frete" >3,45</span>
-                </div>
-                <div class="envio">
-                    <P>Envio</P>
-                    <span class="envio-frete">GRATIS</span>
-                </div>
-                    <div class="total">
-                    <P>total</P>
-                    <span class="total-valor">R$ 30,44</span>
-                   
-                </div>
             </div>
-      </div>
+
+            <div class="cupom">
+                <input type="text" name="cupomD" placeholder="Cupom de DESCONTO">
+                <button type="submit">Aplicar</button>
+            </div>
+
+            <div class="frete">
+                <P>Taxa</P>
+                <span class="valor-frete">3,45</span>
+            </div>
+            <div class="envio">
+                <P>Envio</P>
+                <span class="envio-frete">GRATIS</span>
+            </div>
+            <div class="total">
+                <P>total</P>
+                <span class="total-valor">R$ 30,44</span>
+
+            </div>
+        </div>
+        </div>
     </main>
     <script src="js/script.js"></script>
 </body>
