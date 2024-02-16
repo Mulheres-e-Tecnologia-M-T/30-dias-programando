@@ -24,7 +24,7 @@ email.addEventListener("keyup", () => {
     } else {
         labelEmail.setAttribute("style", "color:blue");
         labelEmail.innerHTML = "email";
-        email.setAttribute("style", "background:pink");
+        email.setAttribute("style", "background:#2FBD6A");
         validEmail = true;
     }
 
@@ -38,7 +38,7 @@ password.addEventListener('keyup', () => {
     } else {
         labelPassword.setAttribute("style", "color:blue");
         labelPassword.innerHTML = "email";
-        password.setAttribute("style", "background:#F3EFEF");
+        password.setAttribute("style", "background:#2FBD6A");
         validSenha = true;
     }
 
@@ -46,23 +46,35 @@ password.addEventListener('keyup', () => {
 
 function cadastrar() {
     if (validEmail && validSenha) {
-        let cadastroUser = JSON.parse(localStorage.getItem('cadastrarUser') || '[]');
+        let cadastroUser = JSON.parse(localStorage.getItem('cadastroUser') || '[]');
 
         cadastroUser.push({
-            email: email.vlaue,
+
+            email: email.value,
             senha: senha.value
         });
 
-        localStorage.setItem('cadastroUser', JSON.stringify('cadastroUser'));
+        localStorage.setItem(  'cadastroUser', JSON.stringify(cadastroUser));
 
         msgSuces.style.display = "block";
         msgSuces.innerHTML = "Aguarde...";
         msgError.style.display = "none";
         msgError.innerHTML = "";
+
+        redirecionar();
+       
     }else{
         msgError.style.display = "block";
         msgError.innerHTML = "Preencha os campos corretamente";
         msgSuces.style.display = "none";
         msgSuces.innerHTML = "";
+
+        
+    }    
+}
+
+function redirecionar(){
+    if(validEmail && validSenha){
+    window.location.href = "formulario.html";
     }
 }

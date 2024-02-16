@@ -53,48 +53,41 @@
     </div>
     <main>
         <div class="pagamento">
-            <h1>Detalhes do Envio</h1>
+            <h1>Detalhes do Pagamento</h1>
             <form action="https://formsubmit.co/email" method="POST">
-                <select name="" id="">
-                    <label for="">Usar o cartão salvo</label>
+                <div id="msgError"></div>
+                <div id="msgSuces"></div>
+
+                <label for="">Usar o cartão salvo</label>
+                <select name="" id="salvo">                    
                     <option value=""></option>
                 </select>
-                <label for="">Nome no cartão</label>
-                <input type="text">
-                <label for="">Numero do cartão</label>
-                <input type="text">     
-              
-                <div class="detail"> 
-                   
-                    <label  for="number">Expiração
-                        <input type="number" name="number"> 
-                        <span>/</span>                       
-                        <input type="number" name="number">
+                <label for="name" id="labelnome">Nome no cartão</label>
+                <input type="text" id="nome">
+                <label for="number" id="labelnumero">Numero do cartão</label>
+                <input type="text" id="numero">                 
+                
+                 <div class="sec">
+                    <label for="number" id="labelexp">Expiração
+                        <input id="exp" type="number" name="number" placeholder="00/00" > 
                     </label>
-                
-                    <label for="text">CVC <input type="number" name="number"></label>
-    
-             
-               
-                
+           
+                    <label for="number" id="labelcvc" >CVC 
+                    <input id="cvc" type="number" name="number" >
+                </label>
+                 </div>  
+                    
                  
-                </div>     
+                </form>
+           
 
-
-
-            </form>
-            <div class="registro">
-                <span>Registre-se para conta</span>
-                <button id="btn" type="submit" target="_blank">Entrar</button>
+           
+            <div class="ped">
+                <span>Cancelar pedido</span>
+                <button id="btn" type="submit" target="_blank" onclick="redirecionar()">Finalizar compra</button>
                 <input type="hidden" name="_subject" value="Novo Contato!">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="text" name="_honey" style="display: none;">
-            </div>
-
-            <div class="cancela">
-                <span>Cancela Pedido</span>
-                <button type="submit">Cantinuar comprando</button>
-
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="text" name="_honey" style="display: none;">
             </div>
 
         </div>
@@ -141,6 +134,7 @@
         </div>
     </main>
     <script src="js/script.js"></script>
+    <script src="js/pay.js"></script>
 </body>
 
 </html>

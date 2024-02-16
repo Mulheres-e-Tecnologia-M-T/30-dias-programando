@@ -119,21 +119,31 @@ form label {
 div.registro {
   border-bottom: 2px solid #E2E8F0;
   padding-bottom: 20px;
+
 }
 
 div.registro,
 .cancela {
   justify-content: end;
   margin-top: 50px;
+  
 
 }
-
-div.registro button {
-  background: #2FBD6A;
+button a{
   color: white;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 700;
+}
+div.registro button {
+  background: #2FBD6A;  
   width: 95px;
   height: 51px;
-  border-radius: 4px;
+  border-radius: 4px;  
+}
+.registro button:hover{
+  background: #05692f;
+  border: 5px solid #9debbd;
 }
 
 div.cancela button {
@@ -147,6 +157,7 @@ div.cancela button {
 .registro span {
   padding-top: 15px;
   font-weight: 600;
+  margin-right: 30px;
 }
 
 .cancela span {
@@ -170,6 +181,8 @@ div.cancela button {
   border-radius: 10px;
   display: none;
 }
+
+
 /*produto*/
 
 div.produto {
