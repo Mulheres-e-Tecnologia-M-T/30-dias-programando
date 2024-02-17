@@ -1,0 +1,33 @@
+
+.contas select{
+    width: 350px;
+    height: 59px;
+    font-weight: 600;
+    color: black;
+    background: #E2E8F0;
+}
+form div.detail {
+    display:flex;
+    gap: 32px;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+.selec button{
+    background: #2FBD6A;
+    color: white;
+    width: 50%;
+    height: 51px;
+    margin: 50px;
+    border-radius: 4px;
+}
+.selec button:hover{
+    background: #05692f;
+    border: 5px solid #9debbd;
+}

@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  border: 0;
+  font-family: 'Inter', sem serifa;
+  font-size: 15px;
+}
+
+/*menu*/
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.navegacao {
+  margin-top: 0;
+  list-style: none;
+  display: flex;
+  background: #E2E8F0;
+  height: 50px;
+  border-top: 30px solid #E2E8F0;
+  width: 100%;
+
+}
+
+li.marca {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.navegacao li a {
+  text-decoration: none;
+  color: black;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navegacao li a:hover {
+  color: rgb(255, 255, 255);
+  background: black;
+  transition: 1.5s;
+}
+
+.help {
+  display: flex;
+  padding-left: 400px;
+}
+
+.itens {
+  display: flex;
+  list-style: none;
+}
+.itens a{
+  text-decoration: none;
+  color: black;
+}
+.itens li {
+  margin: 30px;
+  font-weight: 600;
+}
+
+.itens li .um{
+  color: #2FBD6A;
+}
+li .um-a{
+  color: #2FBD6A;
+}
+.itens span#um {
+  color: #2FBD6A;
+}
+
+.menu{
+list-style: none;
+display: grid;
+width: 100px;
+}
+.menu ul{
+  list-style: none;
+}
+
+/*cadastro*/
+main {
+  display: flex;
+  margin: 10px;
+  gap:30px;
+
+}
+
+div {
+
+  display: flex;
+  width: 100%;
+  margin: 3px;
+}
+
+div.contas {
+  display: block;
+}
+
+form {
+  display: grid;
+}
+
+form input {
+  height: 57px;
+  width: 100%;
+  background: #E2E8F0;
+
+}
+
+form label {
+  padding-top: 50px;
+}
+
+div.registro {
+  border-bottom: 2px solid #E2E8F0;
+  padding-bottom: 20px;
+
+}
+
+div.registro,
+.cancela {
+  justify-content: end;
+  margin-top: 50px;
+  
+
+}
+button a{
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 700;
+}
+div.registro button {
+  background: #2FBD6A;  
+  width: 95px;
+  height: 51px;
+  border-radius: 4px;  
+}
+.registro button:hover{
+  background: #05692f;
+  border: 5px solid #9debbd;
+}
+
+div.cancela button {
+  background: #2FBD6A;
+  color: white;
+  width: 200px;
+  height: 51px;
+  border-radius: 4px;
+}
+
+.registro span {
+  padding-top: 15px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+
+.cancela span {
+  padding-top: 15px;
+  color: #D1402C;
+  font-weight: 600;
+}
+#msgError {
+  text-align: center;
+  color: rgb(99, 8, 8);
+  font-weight: 700;
+  background-color: rgba(243, 15, 15, 0.248);
+  border-radius: 10px;
+  display: none;
+}
+
+#msgSuces {
+  text-align: center;
+  color: green;
+  background-color: rgb(106, 182, 106);
+  border-radius: 10px;
+  display: none;
+}
+
+
+/*produto*/
+
+div.produto {
+  display: block;
+}
+
+.produto-desc {
+  display: block;
+}
+
+div.valor-frete,
+.envio-frete,
+.total-valor {
+  display: block;
+}
+
+.produto span {
+  font-size: 16px;
+  font-weight: 900;
+  justify-content: end;
+}
+
+.contas,
+.produto {
+
+  margin-right: 10px;
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+}
+
+div.valor {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+div.btn-remov {
+  justify-content: end;
+  color: black;
+}
+
+span.ar {
+  height: 20px;
+  width: auto;
+  border-top: 50px;
+  border: 5px solid #F3EFEF;
+  background-color: #F3EFEF;
+}
+
+span.material-symbols-outlined {
+  font-size: 15px;
+}
+
+div.frete {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+div.envio {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.envio-frete {
+  color: #2FBD6A;
+}
+
+div.cupom {
+  margin: 0;
+}
+
+.cupom input {
+  width: 350px;
+  height: 59px;
+  font-weight: 600;
+  color: black;
+  background: #E2E8F0;
+}
+
+.cupom button {
+  width: 102px;
+  height: 59px;
+  border-radius: 4px;
+  margin-left: 100px;
+  font-weight: 700;
+  border: 2px solid #2FBD6A;
+}
+
+div.total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.total span {
+  font-size: 15px;
+}
+
+div.valor-frete,
+.envio-frete,
+.valor-total span {
+  padding-left: 50%;
+
+}
